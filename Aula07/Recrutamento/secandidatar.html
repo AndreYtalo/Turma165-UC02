@@ -4,78 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Se candidatar</title>
-    <style>
-        
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;}
-        main {
-        padding: 20px;
-        max-width: 600px;
-        margin: auto;
-        display: flex;
-        }
-        header {
-            background-color: #031303;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        label {
-            font-weight: bold;
-            margin-top: 10px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            
-        }
-        button{
-            font-size: 16px;
-            background-color: #000500;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        footer{
-            background-color: #001601;
-            color: wheat;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styleSecandidatar.css">
 </head>
 <body>
+    <body bgcolor="black">
+        
+    </body>
     <header>
-        <main>
-        <section>
+        
+        
             <h2>Bem-vindo ao nosso portal de recrutamento!</h2>
             <p>Aqui você pode encontrar as melhores oportunidades de carreira e se candidatar às vagas disponíveis.</p>
-        </section>
+        
     </header>
     <main>
-       <form action="#" method="post">
-        <label for="nome" id="nome">Nome completo</label required><br>
-        <input type="text" id="nome" name="name" placeholder="Nome" required>
-        <br><br>
-        <label for="email" id="email" name="email">E-mail</label required><br>
-        <input type="email" id="email" name="email" placeholder="Email" required>
-        <br><br>
-        <label for="telefone" id="email" name="email">Telefone</label required><br>
-        <input type="tel" id="telefone" name="telefone" placeholder="telefone" required>
-        <br><br>
-        <label for="curriculo">Currículo (PDF)</label><br>
-        <input type="file" id="Curriculo" name="curriculo" accept=".pdf" required>
-        <br><br>
-        <button type="submit">Enviar Candidatura</button>
-
-
-       </form>
+        <section>
+            <fieldset>
+                <form action="#" method="post">
+                    <label for="nome" id="nome">Nome completo</label required><br>
+                    <input type="text" id="nome" name="name" placeholder="Nome" required>
+                    <br><br>
+                    <label for="email" id="email" name="email">E-mail</label required><br>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <br><br>
+                    <label for="telefone" id="email" name="email">Telefone</label required><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="telefone" required>
+                    <br><br>
+                    <label for="curriculo">Currículo (PDF)</label><br>
+                    <input type="file" id="Curriculo" name="curriculo" accept=".pdf" required>
+                    <br><br>
+                    <button type="submit">Enviar Candidatura</button>
+            
+            
+                   </form>
+               </fieldset>
+        </section>
+       
     </main>
     <footer>
         <p>&copy; 2025 Portal de Recrutamento. Todos os direitos reservados.</p>
