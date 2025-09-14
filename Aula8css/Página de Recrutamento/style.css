@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: sans-serif;
+background-color: #0d0d2b;
+color: white;
+line-height: 1.6;
+
+}
+ /* Header */
+ .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #1e2a47;
+    background: #0d0d2b;
+ }
+ .header .logo{font-weight: bold;
+    font-size: 20px;
+    color : #00e0ff;
+    text-shadow: 0 0 10px #00e0ff;}
+ .header nav a{
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+ }
+ /* Elite Topo */
+ .Elite-topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+ }
+ .Elite-texto h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #00e0ff;
+ }
+ .Elite-texto p{
+
+  margin-bottom: 20px;
+ }
+ .Elite-topo ul{
+    list-style: none;
+ }
+ .Elite-imagem img{
+   max-width: 450px;
+   border-radius: 15px;
+   border: 2px solid #00e0ff;
+ }
+ /* form */
+ .formulario{
+    text-align: center;
+    padding: 60px;
+ }
+ .formulario h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff;
+ }
+ form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background: #14143a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #00e0ff;
+    
+ }
+ form input, form select, form textarea{
+    background: #1f1f47;
+    color: white;
+    
+ }
+ form label{
+    display: block;
+    margin: 10px 0 5px;
+
+ }
+ form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    
+ }
+ forme input, form select, form textarea{
+    background: #1f1f47;
+      color: white;
+
+ }
+ 
+ 
+ form button{
+    background: #00e0ff;
+    font-weight: bold;
+    cursor: pointer;
+   
+
+ }
+ button a{
+   text-decoration: none;
+   color: black;
+   
+ }
+ /* Footer */
+ .footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #0b0b20;
+    border-top: 2px solid #1e2a47;
+    border-top: 1px solid #1e2a47;
+    
+ }
+ .footer h3, .footer h4{
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #fff, 0 0 15px #00e0ff
+ }
+ .footer p{
+    margin-bottom: 5px;
+    color: #aaa;
+ }
