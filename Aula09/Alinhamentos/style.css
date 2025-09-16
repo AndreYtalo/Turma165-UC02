@@ -1,0 +1,21 @@
+
+main{
+    background-color: black;
+    height: 60lvh;
+    width: 60vh;
+
+}
+
+
+
+.grid-container{
+    background-color: bisque;
+    display: grid;
+
+}
+.grid-item{
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}

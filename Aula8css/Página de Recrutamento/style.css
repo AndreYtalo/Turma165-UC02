@@ -128,3 +128,29 @@ line-height: 1.6;
     margin-bottom: 5px;
     color: #aaa;
  }
+
+ /*agradecimento*/
+ legend{
+   font-size: 20px;
+   font-weight: bold;
+   color: #00e0ff;
+   text-shadow: 0 0 10px #00e0ff;
+}
+#Voltar{
+   display: inline-block;
+   margin-top: 20px;
+   text-decoration: none;
+   color: #00e0ff;
+   font-weight: bold;
+   border: 2px solid #00e0ff;
+   padding: 5px 10px;}
+
+fieldset{
+ border-radius: 10px;
+ border: 2px solid #00e0ff;
+    padding: 20px;
+    box-shadow: 0 0 10px #00e0ff;
+    max-width: 500px;
+    margin: auto;
+    background-color: #1e2a47;
+}

@@ -1,0 +1,26 @@
+div{
+    font-size: 2em;
+}
+
+.pixel{
+    font: 20px verdana, arial, tahoma, sans-serif;
+}
+.roottipografia{
+    font: 2rem verdana, arial, tahoma, sans-serif;
+}
+body{
+    font-family: sans-serif;
+background-color: #0d0d2b;
+color: white;
+line-height: 1.6;
+padding: 150px;
+
+}
+
+main{
+    background-color: black;
+    text-align: center;
+    
+    
+}
+
