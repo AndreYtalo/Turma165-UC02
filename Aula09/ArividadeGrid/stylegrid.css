@@ -1,21 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    display: grid;
-    grid-template-columns: 100px 100px  9.375rem;
-    grid-template-rows: 80px 1fr 3.75rem;
-    grid-template-areas:
-    "header header header"
-    "textoEsquerdo imagemDireita" 
-    "imagemEsquerda textoDireito";
-    height: 100vh;
-}
-header{
-    grid-area: header;
-    background-color: rgb(105, 9, 9);
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 40px;
 }
 
-/*REFERENCIA https://nicepage.com/ht/6200690/we-invest-in-the-worlds-potential-html-template*/
+.marketing {
+  background: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.marketing h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* duas colunas iguais */
+  grid-template-rows: auto auto;  /* duas linhas */
+  gap: 20px; /* espaço entre os elementos */
+}
+
+.item {
+  background: #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.item.texto h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.item.texto p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.item.imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6a5acd; /* cor de fundo só pra destacar */
+}
+
+.item.imagem img {
+  max-width: 80%;
+  height: auto;
+}
+
+
+/*REFERENCIA https://nicepage.com/ht/6200690/we-invest-in-the-worlds-potential-html-template* /
