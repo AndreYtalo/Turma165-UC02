@@ -1,21 +1,35 @@
-
-main{
-    background-color: black;
-    height: 60lvh;
-    width: 60vh;
-
-}
-
-
-
-.grid-container{
-    background-color: bisque;
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body{
+    background-color: rgb(59, 89, 155);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+.grid-cantainer{
+    background-color: rgba(16, 31, 46, 0.356);
     display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-rows: 100px 100px 100px;
+    gap: 10px;
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: baseline;
+
+
 
 }
 .grid-item{
     background-color: aliceblue;
     margin: 10px;
     padding: 20px;
-    text-align: center;
 }

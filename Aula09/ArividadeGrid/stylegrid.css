@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: 100px 100px  9.375rem;
+    grid-template-rows: 80px 1fr 3.75rem;
+    grid-template-areas:
+    "header header header"
+    "textoEsquerdo imagemDireita" 
+    "imagemEsquerda textoDireito";
+    height: 100vh;
+}
+header{
+    grid-area: header;
+    background-color: rgb(105, 9, 9);
+}
+
+/*REFERENCIA https://nicepage.com/ht/6200690/we-invest-in-the-worlds-potential-html-template*/
