@@ -20,9 +20,9 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* duas colunas iguais */
-  grid-template-rows: auto auto;  /* duas linhas */
-  gap: 20px; /* espaço entre os elementos */
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto auto;  
+  gap: 20px; 
 }
 
 .item {
@@ -46,7 +46,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #6a5acd; /* cor de fundo só pra destacar */
+  background: #6a5acd; 
 }
 
 .item.imagem img {
