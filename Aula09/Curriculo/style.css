@@ -5,29 +5,80 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f6f7fb;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    background-color: #f6f7fb; 
     display: grid;
-    grid-template-columns: 1.875rem 1fr ;
-    grid-template-areas: auto 1fr auto
+    grid-template-columns: 18.75rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
     "header header"
     "aside main"
-    "footer footer";
+    "footer footer";  
     height: 100vh;
 }
+.container{
+    display: contents;
+    max-width: 200px;
+    max-height: 200px;
+    
+}
+
 header{
     grid-area: header;
 }
 main{
     grid-area: main;
+    align-content: cewnter;
 }
 aside{
     grid-area: aside;
+    background-color:#243445 ;
+    color: #f6f7fb;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    gap: 0.625rem;
+    margin-bottom: 50px;
+}
+figure figcaption h1{
+    font-size: 35px;
+}
+#contato, #habilidades{
+    padding: 0 1.25rem;
+    margin-bottom: 50px;
+    align-self: flex-start;
+    
+}
+#contato h3, p{
+    
+   padding: 5px ;
+    align-items: start;
+}
+ul, li{
+    padding: 5px ;
+    align-items: start;
+    margin-left: 10px;
+}
+article{
+    padding: 0 1.25rem;
+    margin-bottom: 50px;
+    align-items: center;
+}
+img{
+    
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+
 }
 footer{
     grid-area: footer;
-}
-img{
-    width: 300px;
-    height: 200px;
 }
