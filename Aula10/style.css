@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row ;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 20rem;
+    background-color: black;
+    justify-content: space-between;
+}
+
+.flex-item{
+    background-color: lightblue;
+    padding: 20px;
+    
+    width: 6rem;
+    text-align: center;
+}
