@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+display: grid;
+grid-template-columns: repeat(3, 200PX);
+gap: 20px 40px;
+grid-template-rows: 300px 300px;
+justify-content: center;
+}
+
+.item{
+    background-color: rgb(58, 90, 196);
+    
+    
+}
