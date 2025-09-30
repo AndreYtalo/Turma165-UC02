@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    width: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10rem;
+}
+@keyframes girar {
+    from {transform: rotate(odg);}
+    to{transform: rotate(360deg);}
+    
+}
+  
+.button01{
+background-color: #3498bd;
+color: white;
+width: 400px;
+height: 100px;
+border-radius: 20px;
+border: none;
+padding: 1rem 2rem;
+cursor: pointer;
+transition: background 0.5s linear;
+animation: girar 000.1s infinite;
+}
+
+.button01:hover{
+    background-color: #2ecc71;
+    
+
+}
+
+.box{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: tomato;
+    border-radius: 20px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    padding: 2rem ;
+    
+    
+}
+
+.box:hover{
+    transform: scale(2);
+}
+
+@keyframes mover {
+    from{transform: translateX(0);}
+    to{transform: translateX(12.5rem);}
+}
+.box2{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(71, 255, 132);
+    border-radius: 20px;
+    animation: mover 2s infinite alternate;
+    text-align: center;
+    padding: 2rem ;
+}
+
+.box2:hover{
+    transform: scale(2);
+}
+
+@keyframes pulse {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.2);}
+    50%{transform: scale(1);}
+    
+}
+.circle{
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: pink;
+    border-radius: 50%;
+    animation: pulse 1s infinite alternate;
+}
+
+.carrinho{
+    margin-top: 3rem;
+    width: 9.375rem;
+    height: 3.125rem;
+    background-color: black;
+    border-radius: .625rem;
+    position: relative;
+    color: white;
+    animation: mover-carrinho 5s infinite;
+
+
+}
+@keyframes mover-carrinho {
+    0%{transform: translateX(0) rotateY(0deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    50%{transform: translateX(-200px) rotateY(180deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    90%{transform: translateX(0) rotateY(180deg);}
+    100%{transform: translateX(0) rotateY(0deg);}
+
+}
+.carrinho::before, .carrinho::after{
+    content: "";
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.625rem;
+    
+}
+.carrinho::before{
+    right: .625rem;
+
+
+}
+@keyframes carro-vermelho {
+    0%{transform: translateX(0) rotateY(0deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    50%{transform: translateX(-200px) rotateY(180deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    
+}
+.carro-vermelho{
+    width: 6.25rem;
+    height: 6.25rem;
+    animation: carro-vermelho 1s infinite;
+}
+@keyframes carro-azul {
+    0%{transform: translateX(0) rotateY(0deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    50%{transform: translateX(-200px) rotateY(180deg);}
+    40%{transform: translateX(-200px) rotateY(0deg);}
+    
+}
+
+
+.bmw{
+    width: 120px;
+    height: 120px;
+    animation: carro-azul 1s infinite alternate-reverse;
+}
+
+@keyframes carro-pantera {
+    0%{transform: translateX(0) rotateY(0deg);}
+    40%{transform: translateX(-80px) rotateY(0deg);}
+    50%{transform: translateX(-150px) rotateY(180deg);}
+    40%{transform: translateX(-200px) rotateY(50deg);}
+    
+}
+
+.pantera{
+    width: 6.5rem;
+    animation: carro-pantera 1s infinite;
+    
+}
