@@ -2,8 +2,8 @@
 /* Variáveis globais */
 :root {
     --cor-fundo: #03042e;
-    --cor-header: #131596;
-    --cor-footer: #333;
+    --cor-header: #0c0fe4ce;
+    --cor-footer: #0e0e0edc;
     --cor-texto-claro: #fff;
     --cor-card: #fff;
     --sombra-card: rgba(0, 0, 0, 0.2);
@@ -46,10 +46,11 @@ nav ul {
     justify-content: center;
     margin-top: var(--margin-top-menu);
     transition: background 1s ease;
+    cursor: pointer;
 }
 
 nav ul li:hover {
-    background-color: #151515;
+    color: #131596;
     
 }
 
