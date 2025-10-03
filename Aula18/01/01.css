@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.texto01{
+ color: rgba(81, 184, 34, 0.801);
+}
+
+.testo02{
+
+    color: blueviolet;
+
+}
