@@ -13,7 +13,7 @@
     <section>
         <h2>Digite a hora atual (0 a 23)</h2>
 
-        <input type="number" id="hora" placeholder="">
+        <input type="number" id="hora" placeholder="hora">
         <button onclick="mostrarSaudacao()">Ver Saudação</button>
       
         <p id="mensagem"></p>
@@ -37,7 +37,33 @@
 
   <p id="mensagem02"></p>
     </section>
+    <!-- 04 -->
+  <section>
+    <h2>Escolha uma cor</h2>
     
+    <select id="cor">
+      <option value="#ff0000">Vermelho</option>
+      <option value="#00ff00">Verde</option>
+      <option value="#0000ff">Azul</option>
+      <option value="#ffff00">Amarelo</option>
+      <option value="#ff69b4">Rosa</option>
+      <option value="#ffffff">Branco</option>
+      <option value="#000000">Preto</option>
+    </select>
+
+    <button onclick="mudarCor()">Mudar Cor</button>
+  </section>
+  <!-- 05 -->
+   <section>
+    
+  <h2>Calculadora de IMC</h2>
+
+  <input type="number" id="peso" placeholder="Peso (kg)">
+  <input type="number" id="altura" placeholder="Altura (m)">
+  <button onclick="calcularIMC()">Calcular</button>
+
+  <p id="resultadoImc"></p>
+   </section>
    </main>
    <script src="script.js"></script>
 </body>

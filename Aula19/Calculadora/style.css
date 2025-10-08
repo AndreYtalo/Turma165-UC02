@@ -1,0 +1,108 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  body {
+    background-color: #0d0d0d;
+    font-family: 'Orbitron', sans-serif; /* Gamer/Futurista */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculadora {
+    background: linear-gradient(145deg, #1a1a1a, #121212);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #00ffea, 0 0 10px #00ffea inset;
+    width: 320px;
+  }
+  
+  #display {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    color: #00ffea;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    box-shadow: inset 0 0 10px #00ffea;
+    margin-bottom: 15px;
+  }
+  
+  .botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    color: #00ffea;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 255, 234, 0.2);
+  }
+  
+  button:hover {
+    background-color: #00ffea;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px #00ffea, 0 0 5px #00ffea;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button.operador {
+    color: #ff0066;
+  }
+  
+  button.operador:hover {
+    background-color: #ff0066;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px #ff0066;
+  }
+  
+  button.limpar {
+    color: #ffaa00;
+  }
+  
+  button.limpar:hover {
+    background-color: #ffaa00;
+    color: #0d0d0d;
+    box-shadow: 0 0 15px #ffaa00;
+  }
+  
+  button.igual {
+    grid-column: span 2;
+    background-color: #00ff5e;
+    color: #0d0d0d;
+    font-weight: bold;
+  }
+  
+  button.igual:hover {
+    background-color: #00ff5e;
+    color: #000;
+    box-shadow: 0 0 20px #00ff5e;
+  }
+  
