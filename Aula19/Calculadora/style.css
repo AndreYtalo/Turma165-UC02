@@ -1,108 +1,138 @@
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+ @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-  body {
-    background-color: #0d0d0d;
-    font-family: 'Orbitron', sans-serif; /* Gamer/Futurista */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, #000010 0%, #001f3f 100%);
+  font-family: 'Bangers', cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.titulo {
+  font-size: 60px;
+  color: #00ccff;
+  text-shadow: 0 0 15px #00eaff, 0 0 30px #00ffff;
+  margin-bottom: 10px;
+}
+
+.frase-poder {
+  font-size: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #00ffff;
+  animation: auraPoder 1.2s infinite alternate;
+}
+
+@keyframes auraPoder {
+  0% {
+    text-shadow: 0 0 10px #00ffff;
   }
-  
-  .calculadora {
-    background: linear-gradient(145deg, #1a1a1a, #121212);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px #00ffea, 0 0 10px #00ffea inset;
-    width: 320px;
+  100% {
+    text-shadow: 0 0 20px #00ccff, 0 0 30px #00ffff;
   }
-  
-  #display {
-    width: 100%;
-    height: 60px;
-    background-color: #000;
-    border: none;
-    border-radius: 10px;
-    color: #00ffea;
-    font-size: 2em;
-    text-align: right;
-    padding: 10px;
-    box-shadow: inset 0 0 10px #00ffea;
-    margin-bottom: 15px;
+}
+
+.frase-poder.explodindo {
+  font-size: 36px;
+  color: #00ffff;
+  text-shadow: 0 0 20px #ffffff, 0 0 40px #00bfff, 0 0 60px #00eaff;
+  animation: explosaoTotal 0.4s infinite alternate;
+}
+
+@keyframes explosaoTotal {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.15) rotate(1deg); }
+}
+
+.calculadora {
+  background: linear-gradient(135deg, #0a0a2a, #001c44);
+  border: 4px solid #00ccff;
+  box-shadow: 0 0 25px #00ccff, 0 0 60px #0099ff inset;
+  padding: 25px;
+  border-radius: 20px;
+  width: 330px;
+  margin: 0 auto;
+  position: relative;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.aura {
+  animation: auraEffect 2s infinite alternate;
+}
+
+@keyframes auraEffect {
+  0% {
+    box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff inset;
   }
-  
-  .botoes {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  100% {
+    box-shadow: 0 0 40px #00eaff, 0 0 80px #00eaff inset;
   }
-  
-  button {
-    padding: 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 10px;
-    background-color: #1f1f1f;
-    color: #00ffea;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 255, 234, 0.2);
-  }
-  
-  button:hover {
-    background-color: #00ffea;
-    color: #0d0d0d;
-    box-shadow: 0 0 15px #00ffea, 0 0 5px #00ffea;
-    transform: scale(1.05);
-  }
-  
-  button:active {
-    transform: scale(0.98);
-  }
-  
-  button.operador {
-    color: #ff0066;
-  }
-  
-  button.operador:hover {
-    background-color: #ff0066;
-    color: #0d0d0d;
-    box-shadow: 0 0 15px #ff0066;
-  }
-  
-  button.limpar {
-    color: #ffaa00;
-  }
-  
-  button.limpar:hover {
-    background-color: #ffaa00;
-    color: #0d0d0d;
-    box-shadow: 0 0 15px #ffaa00;
-  }
-  
-  button.igual {
-    grid-column: span 2;
-    background-color: #00ff5e;
-    color: #0d0d0d;
-    font-weight: bold;
-  }
-  
-  button.igual:hover {
-    background-color: #00ff5e;
-    color: #000;
-    box-shadow: 0 0 20px #00ff5e;
-  }
-  
+}
+
+input#display {
+  width: 100%;
+  height: 60px;
+  background: #000;
+  color: #00ffff;
+  font-size: 28px;
+  border: 2px solid #00ffff;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 15px #00ffff;
+  margin-bottom: 20px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 22px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #003366;
+  color: white;
+  box-shadow: 0 0 10px #0077cc;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  font-family: 'Bangers', cursive;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #00eaff, 0 0 30px #00bfff inset;
+}
+
+button.operador {
+  background: #0055aa;
+}
+
+button.limpar {
+  background: #cc0000;
+  box-shadow: 0 0 15px #ff0000;
+}
+
+button.igual {
+  grid-column: span 2;
+  background: #00bfff;
+  box-shadow: 0 0 15px #00bfff, 0 0 25px #00ffff inset;
+}
+
+button.igual:hover {
+  background: #00eaff;
+  box-shadow: 0 0 25px #00ffff, 0 0 35px #00eaff inset;
+}
+
+/* animação */
