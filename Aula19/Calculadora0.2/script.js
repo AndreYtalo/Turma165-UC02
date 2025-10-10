@@ -1,5 +1,5 @@
-function adicionar(data) {
-   document.querySelector('#display').value += data;
+function adicionar(valor) {
+   document.querySelector('#display').value += valor;
 }
 
 function limpar() {
@@ -22,4 +22,4 @@ function calcular() {
     }
 }
 
-// animação
+
