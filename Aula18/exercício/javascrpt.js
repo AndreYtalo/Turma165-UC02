@@ -11,5 +11,5 @@ resposta.innerText = `sua idade é ${idade.value}`;
 function questão03(){
 let cidade = document.getElementById("nome");
 let resposta = document.getElementById("resposta03");
-resposta.innerText = `seu cidade é ${cidade.value}`;
+resposta.innerText = `sua cidade é ${cidade.value}`;
 }

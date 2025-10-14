@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+          <h1>Calculadora de Médias</h1>
+          
+          <select id="tipo">
+            <option value="aritmetica">Média Aritmética</option>
+            <option value="ponderada">Média Ponderada</option>
+            <option value="geometrica">Média Geométrica</option>
+          </select>
+      
+          <input type="number" id="x" placeholder="Valor X">
+          <input type="number" id="y" placeholder="Valor Y">
+          <input type="number" id="z" placeholder="Valor Z">
+      
+          <button onclick="calcular()">Calcular</button>
+          <p id="resultado"></p>
+        </div>
+      </main>
+      
+      
+  <script src="script.js"></script>
+</body>
+</html>
