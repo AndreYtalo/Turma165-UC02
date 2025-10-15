@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title></title>
@@ -7,27 +8,50 @@
 
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <div class="container">
-          <h1>Calculadora de Médias</h1>
-          
-          <select id="tipo">
-            <option value="aritmetica">Média Aritmética</option>
-            <option value="ponderada">Média Ponderada</option>
-            <option value="geometrica">Média Geométrica</option>
-          </select>
+  <main>
+<!-- Calculadora de Média -->
+    <div class="container">
+      <h1>Calculadora de Médias</h1>
+
+      <select id="tipo">
+        <option value="aritmetica">Média Aritmética</option>
+        <option value="ponderada">Média Ponderada</option>
+        <option value="geometrica">Média Geométrica</option>
+      </select>
+
+      <input type="number" id="x" placeholder="Valor X">
+      <input type="number" id="y" placeholder="Valor Y">
+      <input type="number" id="z" placeholder="Valor Z">
+
+      <button onclick="calcular()">Calcular</button>
+      <p id="resultado"></p>
+<!-- Calculadora simples -->
+      <h1>Calculadora Simples</h1>
+      <label for="op">Operação:</label><br>
+      <select id="op">
+        <option value="+">Soma (+)</option>
+        <option value="-">Subtração (-)</option>
+        <option value="*">Multiplicação (*)</option>
+        <option value="/">Divisão (/)</option>
+      </select>
       
-          <input type="number" id="x" placeholder="Valor X">
-          <input type="number" id="y" placeholder="Valor Y">
-          <input type="number" id="z" placeholder="Valor Z">
-      
-          <button onclick="calcular()">Calcular</button>
-          <p id="resultado"></p>
-        </div>
-      </main>
-      
-      
+      <label for="num01">Número 1:</label><br>
+      <input type="number" id="num01"><br>
+
+      <label for="num02">Número 2:</label><br>
+      <input type="number" id="num02"><br>
+
+
+      <button onclick="questão02()">Calcular</button>
+
+      <h2>Resultado: <span id="resultado02">---</span></h2>
+    </div>
+  </main>
+
+
   <script src="script.js"></script>
 </body>
+
 </html>

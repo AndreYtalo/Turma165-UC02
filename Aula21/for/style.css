@@ -1,0 +1,53 @@
+/* style.css */
+
+body {
+    background-color: #0d0d0d;
+    color: #00ffc3;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    color: #00ffc3;
+    text-shadow: 0 0 10px #00ffc3;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #00ffc3;
+    color: #0d0d0d;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ffc3;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #00ffaa;
+    box-shadow: 0 0 25px #00ffaa;
+}
+
+#resultado {
+    background-color: #1a1a1a;
+    border: 1px solid #00ffc3;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-align: left;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: inset 0 0 10px #00ffc3;
+}
