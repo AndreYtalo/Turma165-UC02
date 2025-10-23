@@ -1,7 +1,7 @@
 export default function Card ({Pergunta, Resposta}) {
     return(
         <>
-          <p>{Pergunta}</p>
+          <h1>{Pergunta}</h1>
           <p>{Resposta}</p>
         </>
     )

@@ -1,7 +1,7 @@
 export default function Footer () {
     return(
         <>
-          <p>Footer</p>
+          <h3>&copy; {new Date().getFullYear()}</h3>
         </>
     )
 }

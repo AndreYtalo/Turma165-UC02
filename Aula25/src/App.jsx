@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-   <h1>Hello Word React!</h1>
+   <h1>Atividade React</h1>
    
    <Card></Card>
    <Header></Header>
