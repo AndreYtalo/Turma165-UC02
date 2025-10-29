@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    background-color: #f5f6fa;
+    min-height: 100vh;
+  }
+  
+  .container p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  

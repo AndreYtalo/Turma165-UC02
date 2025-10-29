@@ -1,13 +1,12 @@
-import livro from "./components/Livros/Livros"
+import Catalago from "./Page/Catalago";
 
-function App() {
+export default function App() {
 
 
   return (
     <>
-      
+      <Catalago />
     </>
   )
 }
 
-export default App
