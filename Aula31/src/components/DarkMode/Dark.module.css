@@ -1,0 +1,48 @@
+:root{
+    ---fonte-principal: "Poppins", sans-serif;
+    --espacamento: 2rem;
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light{
+    background-color: orange;
+    color: #222;
+    min-height: 100vh;
+    text-align: center;
+    font-family: var(---fonte-principal);
+    padding: var(--espacamento);
+    transition: background 0.3, color 0.3s;
+}
+
+
+.dark{
+   background-color: black;
+   color: #ffffff;
+   min-height: 100vh;
+   text-align: center;
+   font-family: var(---fonte-principal);
+   padding: var(--espacamento);
+   transition: background 0.3, color 0.3s;
+}
+
+.botao{
+    margin-top: var(--espacamento);
+    padding: 1rem 2rem;
+    font-family: var(---fonte-principal);
+    cursor: pointer;
+    border: none;
+    border-radius: .75rem;
+    background-color:#0077ff;
+    color: white;
+    transition: 0.3s;
+
+}
+.botao:hover{
+    background-color: #005ad1;
+}
