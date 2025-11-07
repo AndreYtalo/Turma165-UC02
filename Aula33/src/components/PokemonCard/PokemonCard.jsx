@@ -6,8 +6,9 @@ export default function PokemonCard({ nome, tipo, imagem }) {
       <h2>{nome}</h2>
       <img src={imagem} alt={nome} />
       <p>
-        <strong>Tipo:</strong> {tipo}
+        <strong>Tipo:</strong>{tipo}
       </p>
     </div>
   );
 }
+  
